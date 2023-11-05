@@ -77,8 +77,13 @@ li{
   margin: 5px auto;
   background-color:  #255794;
   transition: all 0.3s ease-in-out;
+  overflow-x: hidden; 
 }
 @media (max-width:1000px){
+  body{
+    font-family: 'Montserrat', sans-serif;
+     overflow-x: hidden; 
+  }
  .mobileMenu{
      display: block;
      position: absolute;
@@ -102,7 +107,7 @@ li{
       background-color:#fff;
       text-align: center;
       flex-direction: column;
-      width: 100%;
+      width: 90%;
       transition: 0.3s;
   }
   .nav-item{
@@ -114,9 +119,12 @@ li{
   .navbar{
     min-height: 70px;
   }
+  .container{
+    width: 100%;
+  }
 
   .imagem{
-   margin: 0auto;
+    margin: 0auto;
     display: flex;
     width: 10rem;
   }
