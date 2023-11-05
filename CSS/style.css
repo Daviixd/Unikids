@@ -7,7 +7,7 @@
 }
 body{
   font-family: 'Montserrat', sans-serif;
-    overflow-x: hidden; 
+   overflow-x: hidden; 
 }
 
 header{ 
@@ -182,9 +182,11 @@ h2 {
 
 #texto1 {
   color:  #255794;
-  letter-spacing: 15px;
+  letter-spacing: 10px;
   padding: 10px;
   margin-bottom: 2px;
+  font-family: 'Montserrat', sans-serif;
+
 
 }
 .color{
@@ -331,7 +333,7 @@ h2 {
   display: flex;
   width: 100%;
   margin-top: 40px;
-  margin-bottom: 100px;
+  margin-bottom: 10px;
   align-items: center;
 }
 .imagemConteudo{
