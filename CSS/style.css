@@ -78,7 +78,7 @@ li{
   background-color:  #255794;
   transition: all 0.3s ease-in-out;
 }
-@media (max-width:768px){
+@media (max-width:1000px){
  .mobileMenu{
      display: block;
      position: absolute;
@@ -144,8 +144,15 @@ li{
   display: none;
  }
  #conteudo{
-  display: none;
+  display: block;
+  margin: 0 auto;
+  margin-left: 2rem;
 
+ }
+ #imagemConteudo{
+  margin: 0 auto;
+  width: 300px;
+  height: auto;
  }
  #galeria{
   display: block;
@@ -337,9 +344,12 @@ h2 {
   margin-bottom: 10px;
   align-items: center;
 }
-.imagemConteudo{
+.conteudoImagem{
   width: 50%;
-  height: 300px;
+}
+.imagemConteudo{
+  width: 70%;
+  height: 450px;
   margin-left: 9rem;
   border-radius: 50%;
   margin-top: 50px;
@@ -347,7 +357,7 @@ h2 {
 }
 
 .tituloConteudo{
-  margin-top: 150px;
+  margin-top: 110px;
   margin-bottom: 30px;
   text-decoration: dashed;
   
