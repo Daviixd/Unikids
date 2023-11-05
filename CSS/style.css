@@ -126,6 +126,7 @@ li{
   }
   #headline{
     margin: 0 auto;
+    display: none;
   }
  #corpo{
   display: block;
