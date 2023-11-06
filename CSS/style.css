@@ -107,7 +107,7 @@ li{
       background-color:#fff;
       text-align: center;
       flex-direction: column;
-      width: 90%;
+      width: 100%;
       transition: 0.3s;
   }
   .nav-item{
