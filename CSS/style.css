@@ -7,12 +7,12 @@
 }
 body{
   font-family: 'Montserrat', sans-serif;
-   overflow-x: hidden; 
+  width: 100%;
    
 }
 
 header{ 
-  background-color:rgba(255, 255, 255, 0.815);
+
   width: 100%;
  
 }
@@ -135,7 +135,7 @@ li{
   }
   .imagemP{
     display: none;
-    margin-left: 0px;
+    
   }
   #headline{
     margin: 0 auto;
@@ -144,7 +144,7 @@ li{
  #corpo{
   display: block;
   width: 100%;
-  margin-left: 0px;
+ 
  }
  #card1{
   height: 530px;
@@ -159,7 +159,7 @@ li{
  #conteudo{
   display: block;
   margin: 0 auto;
-  margin-left: 2rem;
+
 
  }
  #imagemConteudo{
@@ -169,20 +169,20 @@ li{
  }
  #galeria{
   display: block;
-  margin-left: 3rem;
+
  }
  #imagensGaleria{
   width: 300px;
   height: auto;
  }
- 
 }
 
 .container {
   width: 100%;
   background-image: url(../Imagens/schoolboys-lesson.jpg);
   background-size: cover;
-  height: 600px;
+  background-position: center;
+  height: 100vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -233,6 +233,7 @@ h2 {
 
 }
 
+
 #imagemP {
   max-width: 100%;
   height: 480px;
@@ -257,17 +258,16 @@ h2 {
   margin-top: 20px;
 }
 .corpo {
+
   flex-flow: row wrap;
   display: flex;
   text-align: center;
   width: 100%;
   gap: 90px;
   margin-top: 20px;
- 
   padding: 20px;
   align-items: center;
-  justify-content: center;
-  
+  justify-content: center; 
 }
 .card1{
   width: 30%;
@@ -278,9 +278,9 @@ h2 {
   border-radius: 10px;
   overflow: hidden;
   color: #000000;
-  background-image: url(../Imagens/9456979.jpg);
- background-size: cover;
- background-position: center;
+  background-image: url(../Imagens/9456979.jpg); 
+  background-size: cover;
+  background-position: center;
 }
 .card1 h1{
   margin-top:   310px;
@@ -309,11 +309,11 @@ h2 {
   width: 30%;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 400px;
-  margin-left: 2rem;
+
   border-radius: 10px;
   background-image: url(../Imagens/closeup-green-sea-turtle-swimming-underwater-lights.jpg);
- background-size: cover;
- background-position: center;
+  background-size: cover;
+  background-position: center;
 }
 .card2 h1{
   margin-top:   310px;
@@ -349,7 +349,7 @@ h2 {
   border-radius: 10px;
   background-size: cover;
   background-position: center;
-  margin-left: 2rem;
+ 
 
 }
 .card4 h1{
@@ -371,6 +371,7 @@ h2 {
   margin-top: 40px;
   margin-bottom: 10px;
   align-items: center;
+  padding: 10px 20px 10px 90px;
 }
 .conteudoImagem{
   width: 50%;
@@ -378,7 +379,7 @@ h2 {
 .imagemConteudo{
   width: 70%;
   height: 450px;
-  margin-left: 9rem;
+
   border-radius: 50%;
   margin-top: 50px;
 
@@ -399,8 +400,7 @@ margin-bottom: 10px;
 .galeria{
   width: 100%;
   display: flex;
-  margin-left: 6rem;
-  margin-bottom: 30px;
+  padding-left: 15vh;
 
   
 }
@@ -422,7 +422,7 @@ hr{
 }
 .imagensGaleria{
   width: 80%;
-  margin-right: 20px;
+  
   border-radius: 20px;
 }
 footer {
