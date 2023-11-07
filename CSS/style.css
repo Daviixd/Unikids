@@ -82,14 +82,11 @@ li{
 
 }
 @media (max-width:768px){
-  body{
-    font-family: 'Montserrat', sans-serif;
+  
 
-  }
  .mobileMenu{
      display: block;
-     position: absolute;
-     
+     position: absolute;    
 
  }
  .mobileMenu.active .bar:nth-child(2){
@@ -129,7 +126,7 @@ li{
   }
 
   .imagem{
-    margin: 0 auto;
+    
     display: flex;
     width: 10rem;
   }
@@ -138,7 +135,7 @@ li{
     
   }
   #headline{
-    margin: 0 auto;
+    
     display: none;
   }
  #corpo{
@@ -149,7 +146,7 @@ li{
  #card1{
   height: 530px;
   width: 90%;
-  margin: 0 auto;
+ 
   margin-bottom: 20px;
   
  }
@@ -258,7 +255,6 @@ h2 {
   margin-top: 20px;
 }
 .corpo {
-
   flex-flow: row wrap;
   display: flex;
   text-align: center;
@@ -273,10 +269,9 @@ h2 {
   width: 30%;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 400px;
-  margin-right: 20px;
   background-color: #ffffff;
   border-radius: 10px;
-  overflow: hidden;
+  
   color: #000000;
   background-image: url(../Imagens/9456979.jpg); 
   background-size: cover;
