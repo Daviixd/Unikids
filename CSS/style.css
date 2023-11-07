@@ -144,10 +144,9 @@ li{
  
  }
  #card1{
-  height: 530px;
+  height: 300px;
   width: 90%;
- 
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   
  }
  #content{
@@ -165,7 +164,11 @@ li{
   height: auto;
  }
  #galeria{
-  display: block;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
 
  }
  #imagensGaleria{
@@ -344,7 +347,6 @@ h2 {
   border-radius: 10px;
   background-size: cover;
   background-position: center;
- 
 
 }
 .card4 h1{
@@ -395,7 +397,7 @@ margin-bottom: 10px;
 .galeria{
   width: 100%;
   display: flex;
-  padding-left: 15vh;
+  padding-left: 11vh;
 
   
 }
