@@ -8,6 +8,7 @@
 body{
   font-family: 'Montserrat', sans-serif;
    overflow-x: hidden; 
+   
 }
 
 header{ 
@@ -20,24 +21,24 @@ li{
 }
 
 .navbar{
-  min-height: 100px;
+  min-height: 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 34px;
+  padding: 0 5%;
 }
 .logo{
   margin-left: 4rem;
 }
 .imagem{
   width: 20rem; 
-  margin-top: 10px;
+  margin-top: 2%;
 
 }
 .nav-menu{
   display: flex;
   align-items: center;
-  gap: 60px;
+  gap: 4rem;
 }
 .nav-menu a {
   text-decoration: none;
@@ -54,10 +55,10 @@ li{
 .nav-menu a::before{
   content: '';
   position: absolute;
-  bottom: -1px;
-  left: -2px;
+  bottom: -0.1rem;
+  left: -0.1rem;
   width: 0px;
-  height: 2px;
+  height: 0.3vh;
   background-color:#5C7799;
   transition: all 1.5s ease;
   border: 2% solid;
@@ -77,20 +78,23 @@ li{
   margin: 5px auto;
   background-color:  #255794;
   transition: all 0.3s ease-in-out;
-  overflow-x: hidden; 
+  
+
 }
-@media (max-width:1000px){
+@media (max-width:768px){
   body{
     font-family: 'Montserrat', sans-serif;
-     overflow-x: hidden; 
+
   }
  .mobileMenu{
      display: block;
      position: absolute;
-     right: 5px;
+     
+
  }
  .mobileMenu.active .bar:nth-child(2){
      opacity: 0;
+     
  }
  .mobileMenu.active .bar:nth-child(1){
   transform: translateY(8px) rotate(45deg);
@@ -98,6 +102,7 @@ li{
   .mobileMenu.active .bar:nth-child(3){
       transform: translateY(-8px) rotate(-45deg);
   }
+ 
   .nav-menu{
       position: fixed;
       left: -100%;
@@ -124,7 +129,7 @@ li{
   }
 
   .imagem{
-    margin: 0auto;
+    margin: 0 auto;
     display: flex;
     width: 10rem;
   }
@@ -174,6 +179,7 @@ li{
 }
 
 .container {
+  width: 100%;
   background-image: url(../Imagens/schoolboys-lesson.jpg);
   background-size: cover;
   height: 600px;
