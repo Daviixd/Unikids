@@ -12,9 +12,7 @@ body{
 }
 
 header{ 
-  background-image: url(../Imagens/4028065.jpg);
-  background-size: cover;
-
+ 
   width: 100%;
  
 }
@@ -30,7 +28,7 @@ li{
   padding: 0 5%;
 }
 .logo{
-  margin-left: 4rem;
+  margin-left: 1rem;
 }
 .imagem{
   width: 20rem; 
@@ -44,7 +42,7 @@ li{
 }
 .nav-menu a {
   text-decoration: none;
-  color: #00A2D4;
+  color: #255794;
   padding: 1rem;
   transform: 2ms ease-in;
   position: relative;
@@ -128,7 +126,7 @@ li{
   }
 
   .imagem{
-    margin-left: 1rem;
+    margin-left: 6rem;
     display: flex;
     width: 10rem;
   }
@@ -192,7 +190,7 @@ li{
  #textoCard{
   align-items: flex-end;
   justify-content: flex-end;
-  color: #000000;
+  color: #ffffff;
  }
  #galeria{
   display: flex;
@@ -263,6 +261,7 @@ h2 {
   max-width: 100%;
   height: 480px;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 20px;
 }
 
 .botao {
@@ -317,6 +316,7 @@ h2 {
 .texto{
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 .card1 a , .card2 a , .card3 a , .card4 a {
   text-decoration: none;
@@ -411,7 +411,7 @@ margin-bottom: 10px;
   margin-top: 30px;
 }
 hr{
-  width: 10%;
+  width: 15%;
   margin: 0 auto;
   margin-bottom: 60px;
  
@@ -437,8 +437,8 @@ footer {
 
 #footer_content {
   margin-top: 20px;
-  border-radius: 10px;
-  background-color:#ffffff;
+  border-radius: 2px;
+  background-color:#95BAFE;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 3rem 3.5rem;
@@ -545,7 +545,7 @@ footer {
   color: rgb(0, 0, 0);
   display: flex;
   justify-content: center;
-  background-color: #ffffff;
+  background-color: #89b2ff;
   font-size: 0.9rem;
   padding: 1.5rem;
   font-weight: 100;
