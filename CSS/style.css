@@ -192,19 +192,7 @@ li{
   justify-content: flex-end;
   color: #ffffff;
  }
- #galeria{
-  display: flex;
-  flex-direction: column;
-  padding-left: 40px;
-  align-items: center;
-  justify-content: center;
-  
- }
- #imagensGaleria{
-  width: 300px;
-  height: auto;
-  margin-bottom: 20px;
- }
+
 
 }
 
@@ -212,7 +200,6 @@ li{
   width: 100%;
   background-image: url(../Imagens/schoolboys-lesson.jpg);
   background-size: cover;
-  background-position: center;
   height: 100vh;
   display: flex;
   flex-flow: row wrap;
@@ -367,6 +354,43 @@ button:hover{
   background-position: center;
 
 }
+.galeria{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px; 
+  padding: 20px;
+  width: 100%;
+}
+.imagemGaleria{
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+@media (max-width: 768px) {
+  .galeria {
+    grid-template-columns: 1fr; 
+  }
+  .jogos{
+    grid-template-columns: 1fr; 
+  }
+}
+
+ h2{
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 20px;
+ }
+.hr{
+  width: 150px;
+ margin: 0 auto;
+}
+.jogos{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 10px; 
+  padding: 20px;
+  width: 100%;
+}
 
 .conteudo{
   display: flex;
@@ -398,32 +422,6 @@ margin-bottom: 10px;
 }
 .textoP{
   color: #00A2D4;
-}
-.galeria{
-  width: 100%;
-  display: flex;
-  padding-left: 7%;
-  gap: 10px;
-}
- h2{
-  font-size: 40px;
-  text-align: center;
-  margin-bottom: 40px;
-  margin-top: 30px;
-}
-hr{
-  width: 15%;
-  margin: 0 auto;
-  margin-bottom: 60px;
- 
-}
-.imagensgaleria{
-   width: 90%;
- 
-}
-.imagensGaleria{
-  width: 80%;
-  border-radius: 20px;
 }
 footer {
   width: 100%;
