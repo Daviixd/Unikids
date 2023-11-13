@@ -1,41 +1,37 @@
-@import url('https://fonts.googleapis.com/css2? family= Anton & family= Montserrat:wght@200 & display=swap');
+@import url("https://fonts.googleapis.com/css2? family= Anton & family= Montserrat:wght@200 & display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  font-family: 'Montserrat', sans-serif;
+body {
+  font-family: "Montserrat", sans-serif;
   width: 100%;
-   
 }
 
-header{ 
- 
+header {
   width: 100%;
- 
 }
-li{
+li {
   list-style: none;
 }
 
-.navbar{
+.navbar {
   min-height: 10%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 5%;
 }
-.logo{
+.logo {
   margin-left: 1rem;
 }
-.imagem{
-  width: 20rem; 
+.imagem {
+  width: 20rem;
   margin-top: 2%;
-
 }
-.nav-menu{
+.nav-menu {
   display: flex;
   align-items: center;
   gap: 4rem;
@@ -46,154 +42,141 @@ li{
   padding: 1rem;
   transform: 2ms ease-in;
   position: relative;
-  font-family: 'Montserrat', sans-serif
+  font-family: "Montserrat", sans-serif;
 }
-.nav-menu:hover{
-  color: #2A3D54;
+.nav-menu:hover {
+  color: #2a3d54;
   border: none;
 }
-.nav-menu a::before{
-  content: '';
+.nav-menu a::before {
+  content: "";
   position: absolute;
   bottom: -0.1rem;
   left: -0.1rem;
   width: 0px;
   height: 0.3vh;
-  background-color:#5C7799;
+  background-color: #5c7799;
   transition: all 1.5s ease;
   border: 2% solid;
 }
-.nav-menu a:hover::before{
+.nav-menu a:hover::before {
   width: 100%;
 }
-.mobileMenu{
+.mobileMenu {
   display: none;
   cursor: pointer;
 }
-.bar{
+.bar {
   display: block;
   width: 28px;
   height: 3px;
   border-radius: 2px;
   margin: 5px auto;
-  background-color:  #255794;
+  background-color: #255794;
   transition: all 0.3s ease-in-out;
-  
-
 }
-@media (max-width:768px){
-  
+@media (max-width: 768px) {
+  .mobileMenu {
+    display: block;
+    position: absolute;
+  }
+  .mobileMenu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .mobileMenu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  .mobileMenu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
 
- .mobileMenu{
-     display: block;
-     position: absolute;    
-
- }
- .mobileMenu.active .bar:nth-child(2){
-     opacity: 0;
-     
- }
- .mobileMenu.active .bar:nth-child(1){
-  transform: translateY(8px) rotate(45deg);
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
+    border-radius: 0 0 20px 20px;
+    background-color: #fff;
+    text-align: center;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.3s;
   }
-  .mobileMenu.active .bar:nth-child(3){
-      transform: translateY(-8px) rotate(-45deg);
+  .nav-item {
+    margin: 16px 0;
   }
- 
-  .nav-menu{
-      position: fixed;
-      left: -100%;
-      top: 70px;
-      gap: 0;
-      border-radius: 0 0 20px 20px;
-      background-color:#fff;
-      text-align: center;   
-      flex-direction: column;
-      width: 100%;
-      transition: 0.3s;
+  .nav-menu.active {
+    left: 0;
   }
-  .nav-item{
-      margin: 16px 0;
-  }
-  .nav-menu.active{
-      left: 0;
-  }
-  .navbar{
+  .navbar {
     min-height: 70px;
   }
-  .container{
+  #container {
     width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url(../Imagens/students-knowing-right-answer.jpg);
   }
 
-  .imagem{
+  .imagem {
     margin-left: 6rem;
     display: flex;
     width: 10rem;
   }
-  .imagemP{
-    display: none;
-    
-  }
-  #headline{
-    
+  .imagemP {
     display: none;
   }
- #corpo{
-  display: flex;
-  width: 100%;
- 
- }
- #card1{
-  height: 400px;
-  width: 90%;
-
-  
- }
- #card2{
-  width: 90%;
-  height: 430px;
- }
- #card3{
-  margin-left: 1rem;
-  width: 90%;
-  height: 400px;
- }
- #card4{
-  width: 90%;
- }
- #botaoLeiaMais{
-  padding: 0;
-  margin: 0;
-  display: none;
- }
- #content{
-  display: none;
- }
- #conteudo{
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  margin-left: 0;
-  padding: 0;
-
-
- }
- #imagemConteudo{
-  padding: 0;
-  width: 200px;
-  height: 200px;
-
- }
- #textoConteudo{
-  text-align: center;
- }
- #textoCard{
-  align-items: flex-end;
-  justify-content: flex-end;
-  color: #ffffff;
- }
-
-
+  #headline {
+    display: none;
+  }
+  #corpo {
+    display: flex;
+    width: 100%;
+  }
+  #card1 {
+    height: 400px;
+    width: 90%;
+  }
+  #card2 {
+    width: 90%;
+    height: 430px;
+  }
+  #card3 {
+    margin-left: 1rem;
+    width: 90%;
+    height: 400px;
+  }
+  #card4 {
+    width: 90%;
+  }
+  #botaoLeiaMais {
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  #content {
+    display: none;
+  }
+  #conteudo {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-left: 0;
+    padding: 0;
+  }
+  #imagemConteudo {
+    padding: 0;
+    width: 200px;
+    height: 200px;
+  }
+  #textoConteudo {
+    text-align: center;
+  }
+  #textoCard {
+    align-items: flex-end;
+    justify-content: flex-end;
+    color: #ffffff;
+  }
 }
 
 .container {
@@ -219,21 +202,19 @@ h2 {
 }
 
 #texto1 {
-  color:  #255794;
+  color: #255794;
   letter-spacing: 10px;
   padding: 10px;
   margin-bottom: 2px;
-  font-family: 'Montserrat', sans-serif;
-
-
+  font-family: "Montserrat", sans-serif;
 }
-.color{
+.color {
   background-color: #ffffff8f;
   border-radius: 10px;
 }
 
 .headline p {
-  color:  #255794;
+  color: #255794;
   text-align: left;
   margin-bottom: 7px;
   padding: 10px;
@@ -254,7 +235,7 @@ h2 {
 
 .botao {
   display: inline-block;
-  background:  #95BAFE;
+  background: #95bafe;
   padding: 20px;
   color: white;
   text-transform: uppercase;
@@ -263,9 +244,9 @@ h2 {
 }
 
 .botao:hover {
-  background: #5885E0;
+  background: #5885e0;
 }
-.textoCard{
+.textoCard {
   text-align: center;
   margin-top: 20px;
 }
@@ -278,51 +259,53 @@ h2 {
   margin-top: 20px;
   padding: 20px;
   align-items: center;
-  justify-content: center; 
+  justify-content: center;
 }
-.card1{
+.card1 {
   width: 30%;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 400px;
   background-color: #ffffff;
-  border-radius: 10px;  
+  border-radius: 10px;
   color: #000000;
-  background-image: url(../Imagens/9456979.jpg); 
+  background-image: url(../Imagens/9456979.jpg);
   background-size: cover;
   background-position: center;
-  
 }
-.textoCard{
+.textoCard {
   align-items: flex-end;
   justify-content: flex-end;
-  margin-top:310px;
+  margin-top: 310px;
   font-size: 25px;
   margin-bottom: 20px;
   cursor: pointer;
-  color:#ffffff;
+  color: #ffffff;
 }
-.texto{
+.texto {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 40px;
 }
-.card1 a , .card2 a , .card3 a , .card4 a {
+.card1 a,
+.card2 a,
+.card3 a,
+.card4 a {
   text-decoration: none;
   color: #000000;
 }
 
-button{
+button {
   width: 75%;
-  background-color:#00A2D4; 
+  background-color: #00a2d4;
   padding: 5px;
-  border:none;
+  border: none;
   border-radius: 10px;
   cursor: pointer;
 }
-button:hover{
+button:hover {
   background-color: #15bef1;
 }
-.card2{
+.card2 {
   width: 30%;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 400px;
@@ -333,7 +316,7 @@ button:hover{
   background-position: center;
 }
 
-.card3{
+.card3 {
   width: 30%;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 400px;
@@ -344,7 +327,7 @@ button:hover{
   background-position: center;
 }
 
-.card4{
+.card4 {
   width: 30%;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   height: 400px;
@@ -352,57 +335,53 @@ button:hover{
   border-radius: 10px;
   background-size: cover;
   background-position: center;
-
 }
-.galeria{
+.galeria {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  gap: 10px; 
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
   padding: 30px;
   width: 100%;
- 
 }
-.imagemGaleria{
+.imagemGaleria {
   width: 100%;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  
   background-color: rgb(40, 43, 50);
 }
 @media (max-width: 768px) {
   .galeria {
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
   }
-  #jogos{
-    grid-template-columns: 1fr; 
+  #jogos {
+    grid-template-columns: 1fr;
   }
 }
 
- h2{
+h2 {
   text-align: center;
   margin-top: 30px;
   margin-bottom: 20px;
- }
-.hr{
-  width: 150px;
- margin: 0 auto;
 }
-.jogos{
+.hr {
+  width: 150px;
+  margin: 0 auto;
+}
+.jogos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); 
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   padding: 20px;
   width: 100%;
-
 }
-.imagemJogo{
+.imagemJogo {
   width: 100%;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 5px;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-.conteudo{
+.conteudo {
   display: flex;
   width: 100%;
   margin-top: 20px;
@@ -410,34 +389,31 @@ button:hover{
   align-items: center;
   padding: 10px 20px 10px 80px;
 }
-.conteudoImagem{
+.conteudoImagem {
   width: 50%;
 }
-.imagemConteudo{
+.imagemConteudo {
   width: 70%;
   height: 450px;
 
   border-radius: 50%;
   margin-top: 50px;
-
 }
 
-.tituloConteudo{
+.tituloConteudo {
   margin-top: 110px;
   margin-bottom: 30px;
   text-decoration: dashed;
 }
 .conteudo p {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
-.textoP{
-  color: #00A2D4;
+.textoP {
+  color: #00a2d4;
 }
 footer {
   width: 100%;
   color: rgb(0, 0, 0);
-
-
 }
 
 .footer-link {
@@ -448,7 +424,7 @@ footer {
   margin-top: 20px;
   margin-top: 20px;
   border-radius: 5px;
-  background-color:#95BAFE;
+  background-color: #95bafe;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 3rem 3.5rem;
@@ -515,7 +491,7 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  margin-top: 20px; 
+  margin-top: 20px;
 }
 
 #footer_subscribe p {
@@ -531,12 +507,12 @@ footer {
 
 #input_group input {
   all: unset;
-  padding: 0.65rem; 
+  padding: 0.65rem;
   width: 100%;
 }
 
 #input_group button {
-  background-color:#181818;
+  background-color: #181818;
   border: none;
   color: rgb(243, 238, 238);
   padding: 0px 1.25rem;
@@ -563,13 +539,13 @@ footer {
 
 @media screen and (max-width: 768px) {
   #footer_content {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 @media screen and (max-width: 426px) {
   #footer_content {
-      grid-template-columns: repeat(1, 1fr);
-      padding: 3rem 2rem;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 3rem 2rem;
   }
 }
