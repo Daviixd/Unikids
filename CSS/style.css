@@ -360,17 +360,20 @@ button:hover{
   gap: 10px; 
   padding: 20px;
   width: 100%;
+ 
 }
 .imagemGaleria{
   width: 100%;
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0.5px;
+  background-color: rgb(40, 43, 50);
 }
 @media (max-width: 768px) {
   .galeria {
     grid-template-columns: 1fr; 
   }
-  .jogos{
+  #jogos{
     grid-template-columns: 1fr; 
   }
 }
@@ -386,12 +389,19 @@ button:hover{
 }
 .jogos{
   display: grid;
-  grid-template-columns: repeat(2, 1fr); 
-  gap: 10px; 
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px;
   padding: 20px;
   width: 100%;
-}
 
+}
+.imagemJogo{
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
 .conteudo{
   display: flex;
   width: 100%;
@@ -427,6 +437,7 @@ footer {
   width: 100%;
   color: rgb(0, 0, 0);
 
+
 }
 
 .footer-link {
@@ -434,6 +445,7 @@ footer {
 }
 
 #footer_content {
+  margin-top: 20px;
   margin-top: 20px;
   border-radius: 5px;
   background-color:#95BAFE;
