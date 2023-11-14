@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2? family= Anton & family= Montserrat:wght@200 & display=swap");
+@import url("https://fonts.googleapis.com/css2? family= Poppins:wght@100 & display=swap");
 
 * {
   margin: 0;
@@ -6,8 +6,10 @@
   box-sizing: border-box;
 }
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   width: 100%;
+  background-color: #fff;
+  min-height: 100vh;
 }
 
 header {
@@ -118,7 +120,7 @@ li {
     width: 100%;
     background-size: cover;
     background-position: center;
-    background-image: url(../Imagens/students-knowing-right-answer.jpg);
+    background-image: url(../Imagens/9456979.jpg);
   }
 
   .imagem {
@@ -184,7 +186,7 @@ li {
 
 .container {
   width: 100%;
-  background-image: url(../Imagens/schoolboys-lesson.jpg);
+  background-image: url(../Imagens/0907_01.jpg);
   background-size: cover;
   height: 100vh;
   display: flex;
