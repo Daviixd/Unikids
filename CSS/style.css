@@ -7,9 +7,8 @@
 }
 body {
   font-family: "Poppins", sans-serif;
-  width: 100%;
+
   background-color: #fff;
-  min-height: 100vh;
 }
 
 header {
@@ -189,9 +188,8 @@ li {
 
 .container {
   width: 100%;
-  background-image: url(../Imagens/18043.jpg);
-  background-size: contain;
-  background-position: center;
+  background-image: url(../Imagens/fundo.jpg);
+  background-size: cover;
   height: 100vh;
   display: flex;
   flex-flow: row wrap;
@@ -200,61 +198,6 @@ li {
   padding-top: 50px;
 }
 
-.headline {
-  flex: 40%;
-  margin-left: 6rem;
-}
-
-h2 {
-  padding: 0;
-  margin: 0;
-}
-
-#texto1 {
-  color: #255794;
-  letter-spacing: 10px;
-  padding: 10px;
-  margin-bottom: 2px;
-  font-family: "Montserrat", sans-serif;
-}
-.color {
-  background-color: #ffffff8f;
-  border-radius: 10px;
-}
-
-.headline p {
-  color: #255794;
-  text-align: left;
-  margin-bottom: 7px;
-  padding: 10px;
-}
-.imagemP {
-  flex: 40%;
-  margin-left: 5%;
-  margin-right: 5%;
-  text-align: center;
-}
-
-#imagemP {
-  max-width: 100%;
-  height: 480px;
-  box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 20px;
-}
-
-.botao {
-  display: inline-block;
-  background: #95bafe;
-  padding: 20px;
-  color: white;
-  text-transform: uppercase;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.botao:hover {
-  background: #5885e0;
-}
 .textoCard {
   text-align: center;
   margin-top: 20px;
@@ -331,7 +274,7 @@ button:hover {
   height: 400px;
   margin-right: 20px;
   border-radius: 10px;
-  background-image: url(../Imagens/arara.jpg );
+  background-image: url(../Imagens/arara.jpg);
   background-size: cover;
   background-position: center;
 }
