@@ -101,7 +101,7 @@ li {
     top: 70px;
     gap: 0;
     border-radius: 0 0 20px 20px;
-    background-color: #fff;
+    background-color: #acdef9;
     text-align: center;
     flex-direction: column;
     width: 100%;
@@ -120,13 +120,16 @@ li {
     width: 100%;
     background-size: cover;
     background-position: center;
-    background-image: url(../Imagens/0907_01.jpg);
+    background-image: url(../Imagens/18043.jpg);
   }
 
   .imagem {
     margin-left: 6rem;
     display: flex;
     width: 10rem;
+  }
+  #jogo {
+    display: none;
   }
   .imagemP {
     display: none;
@@ -317,7 +320,7 @@ button:hover {
   height: 400px;
 
   border-radius: 10px;
-  background-image: url(../Imagens/closeup-green-sea-turtle-swimming-underwater-lights.jpg);
+  background-image: url(../Imagens/tartaruga.png);
   background-size: cover;
   background-position: center;
 }
