@@ -16,7 +16,7 @@ header {
   width: 100%;
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: #acdef9;
 }
 li {
   list-style: none;
@@ -43,14 +43,14 @@ li {
 }
 .nav-menu a {
   text-decoration: none;
-  color: #255794;
+  color: #ffffff;
   padding: 1rem;
   transform: 2ms ease-in;
   position: relative;
   font-family: "Montserrat", sans-serif;
 }
 .nav-menu:hover {
-  color: #2a3d54;
+  color: rgb(255, 255, 255);
   border: none;
 }
 .nav-menu a::before {
@@ -60,7 +60,7 @@ li {
   left: -0.1rem;
   width: 0px;
   height: 0.3vh;
-  background-color: #5c7799;
+  background-color: #00a2d4;
   transition: all 1.5s ease;
   border: 2% solid;
 }
@@ -120,7 +120,7 @@ li {
     width: 100%;
     background-size: cover;
     background-position: center;
-    background-image: url(../Imagens/9456979.jpg);
+    background-image: url(../Imagens/0907_01.jpg);
   }
 
   .imagem {
@@ -186,8 +186,9 @@ li {
 
 .container {
   width: 100%;
-  background-image: url(../Imagens/0907_01.jpg);
-  background-size: cover;
+  background-image: url(../Imagens/18043.jpg);
+  background-size: contain;
+  background-position: center;
   height: 100vh;
   display: flex;
   flex-flow: row wrap;
@@ -429,7 +430,7 @@ footer {
   margin-top: 20px;
   margin-top: 20px;
   border-radius: 5px;
-  background-color: #95bafe;
+  background-color: #acdef9;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding: 3rem 3.5rem;
