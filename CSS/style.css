@@ -361,7 +361,6 @@ h2 {
   padding: 40px;
   display: grid;
   place-items: center;
-
   scroll-margin-top: 4rem;
 }
 
@@ -543,4 +542,11 @@ footer {
     grid-template-columns: repeat(1, 1fr);
     padding: 3rem 2rem;
   }
+}
+.buttonFooter {
+  width: 10%;
+  margin-left: 20px;
+}
+.devs {
+  display: none;
 }
