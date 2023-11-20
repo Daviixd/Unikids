@@ -56,7 +56,7 @@ li {
   padding: 1rem;
   transform: 2ms ease-in;
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: "Poppins" sans-serif;
 }
 .nav-menu:hover {
   color: rgb(255, 255, 255);
@@ -549,4 +549,5 @@ footer {
 }
 .devs {
   display: none;
+  margin-left: 10px;
 }
