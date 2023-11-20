@@ -82,23 +82,21 @@
           </div>
           <div>
             <input
-              type="password"
-              placeholder="Senha"
+              type="text"
+              placeholder="Digite o assunto desejado"
               class="inputs required"
-              oninput="mainPasswordValidate()"
+              oninput="nameValidate()"
             />
-            <span class="span-required"
-              >Digite uma senha com no mínimo 8 caracteres</span
-            >
+            <span class="span-required">Digite o Assunto</span>
           </div>
           <div>
             <input
-              type="password"
-              placeholder="Repita a sua senha"
+              type="text"
+              placeholder="Mensagem"
               class="inputs required"
-              oninput="comparePassword()"
+              oninput="nameValidate()"
             />
-            <span class="span-required">Senhas devem ser compatíveis</span>
+            <span class="span-required">Mensagem</span>
           </div>
           <div>
             <button class="botaoContinuar" type="submit">Entrar</button>

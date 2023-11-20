@@ -45,18 +45,3 @@ function emailValidate() {
     removeError(2);
   }
 }
-function mainPasswordValidate() {
-  if (campos[3].value.length <= 8) {
-    setError(3);
-  } else {
-    removeError(3);
-    comparePassword();
-  }
-}
-function comparePassword() {
-  if (campos[3].value === campos[4].value && campos[4].value.length >= 8) {
-    removeError(4);
-  } else {
-    setError(4);
-  }
-}
