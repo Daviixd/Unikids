@@ -361,7 +361,7 @@ h2 {
   padding: 40px;
   display: grid;
   place-items: center;
-  z-index: -1;
+
   scroll-margin-top: 4rem;
 }
 
