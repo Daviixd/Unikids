@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@100&display=swap");
+body {
+  font-family: "Oswald", sans-serif;
+}
+header {
+  width: 100%;
+  background-color: #acdef9;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo {
+  width: 300px;
+  padding-top: 20px;
+}
+main {
+  background-image: url(../Imagens/fundo.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.texto {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #00a2d4;
+  font-size: 2em;
+}
+#form {
+  width: 100%;
+  text-align: center;
+}
+.inputs {
+  text-align: center;
+  margin-top: 10px;
+  border-radius: 5px;
+  height: 5vh;
+  width: 40%;
+  color: #acdef9;
+}
+.inputs::placeholder {
+  color: #acdef9;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+:root {
+  --color-red: #e63636;
+}
+.span-required {
+  justify-content: center;
+  align-items: center;
+  display: none;
+  text-align: center;
+  font-size: 12px;
+  color: var(--color-red);
+}
+.botaoContinuar {
+  padding: 8px;
+  background: #acdef9;
+  width: 20%;
+  margin-top: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+}
