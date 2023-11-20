@@ -18,12 +18,17 @@
         <nav class="navbar">
             <a href="#" class="logo"><img class="imagem" src="../Imagens/UniKids 02.png"></a>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#galeria" class="nav-link">Galeria</a></li>
-                <li class="nav-item"><a href="#conteudo" class="nav-link">Diretor</a></li>
-                <li class="nav-item"><a href="#jogos" class="nav-link">Jogos</a></li>
-                <li class="nav-item"><a href="#corpo" class="nav-link">Noticias</a></li>
-                <li class="nav-item"><a href="./html/formulario.html" target="_blank" class="nav-link">Contato</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
+                <li class="nav-item"><a href="#galeria" class="nav-link">GALERIA</a></li>
+                <li class="nav-item"><a href="#conteudo" class="nav-link">DIRETOR</a></li>
+                <li class="nav-item"><a href="#jogos" class="nav-link">JOGOS</a></li>
+                <li class="nav-item"><a href="#corpo" class="nav-link">NOTICIAS </a>
+                <ul class="dropTown" id="dropTown">
+                    <li><a href="#galeriaAnimada">NOSSOS MASCOTES</a></li>
+                    <li><a href="./html/formulario.html">FORMULARO</a></li>
+                    <li><a href="#footer_content">RODAPÉ</a></li>
+                </ul></li>
+               
             </ul>
         
            
@@ -61,13 +66,38 @@
         <p class="textoP">Escola é ter a garantia do futuro</p>
     </div>
 </main>
+    <main class="galeriaAnimada" id="galeriaAnimada">
+            <h2>Nossos Mascotes</h2>
+           <hr class="hr"> <br>
+      <div class="gallery">
+        <article class="cardAnimado" id="cardAnimado">
+          <figure>
+            <img src="./Imagens/menina.jfif" alt="Winter Forest" />
+            
+          </figure>
+        </article>
+        <article class="cardAnimado" id="cardAnimado">
+          <figure>
+            <img src="./Imagens/menino.jfif" alt="Lavender Field" />
+            
+          </figure>
+        </article>
+        <article class="cardAnimado" id="cardAnimado">
+          <figure>
+            <img src="./Imagens/severo.jfif" alt="Wooden Bridge" />
+           
+          </figure>
+        </article>
+        <!-- Pictures from Freepik -->
+      </div>
+    </main>
 <h2>Jogos</h2>
 <hr class="hr"> 
 <div class="jogos" id="jogos">
   
-    <div class="jogo"> <a href="https://jogo-dragon-ball-dn68.vercel.app/" target="_blank"><img src="./Imagens/i810447.jpeg" class="imagemJogo"></a> </div>
-    <div class="jogo"> <a href="https://jogo-pokemon-gamma.vercel.app/" target="_blank"><img src="./Imagens/pokemon.jpeg" class="imagemJogo" id="jogo"></a> </div>
-    <div class="jogo"> <a href="https://jogo-dragon-ball-dn68.vercel.app/" target="_blank"><img src="./Imagens/i810447.jpeg" class="imagemJogo"></a> </div>
+    <div class="jogo"> <a href="https://jogo-dragon-ball-dn68.vercel.app/" target="_blank"><img src="./Imagens/dragonBall.jfif" class="imagemJogo"></a> </div>
+    <div class="jogo"> <a href="https://jogo-pokemon-gamma.vercel.app/" target="_blank"><img src="./Imagens/pokemon.jfif" class="imagemJogo" id="jogo"></a> </div>
+    <div class="jogo"> <a href="https://jogo-dragon-ball-dn68.vercel.app/" target="_blank"><img src="./Imagens/dragonBall.jfif" class="imagemJogo"></a> </div>
 
 </div>
 <h1 class="texto"> Noticias</h1>
@@ -153,33 +183,34 @@
                 </li>
             </ul>
 
-            <div id="footer_subscribe" >
-                <h3>Entre em Contato</h3>
+            <ul class="footer-list">
+                <li>
+                    <h3>Suporte</h3>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Cookies</a>
+                </li>
+                <li>
+                    <a href="#" class="footer-link">Blog</a>
+                </li>
+                <li>
+                    <a href="./html/formulario.html" class="footer-link">Contato</a>
+                </li>
+            </ul>
+
+          
 
 
 
-                <div id="input_group">
-                    <input type="email" id="email">
-                    <button>
-                        <i class="fa-regular fa-envelope"></i>
-                    </button>
-                </div>
-                <div id="input_group">
-                    <input type="tel" id="email">
-                    <button>
-                        <i class="fa-solid fa-phone"></i>
-                    </button>
-                </div>
-            </div>
-        </div> 
+          
 
-        <div id="footer_copyright">
+       
+    </footer> 
+     <div id="footer_copyright">
             &#169
             Todos os Direitos Reservados 2023
              David Moreira
         </div>
-    </footer> 
-    
 
 
 

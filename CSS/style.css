@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   font-family: "Oswald", sans-serif;
 
@@ -17,7 +18,8 @@ header {
   width: 100%;
   position: sticky;
   top: 0;
-  background-color: #acdef9;
+  background-color: #ffffff;
+  z-index: 1;
 }
 li {
   list-style: none;
@@ -44,7 +46,7 @@ li {
 }
 .nav-menu a {
   text-decoration: none;
-  color: #ffffff;
+  color: #00a2d4;
   padding: 1rem;
   transform: 2ms ease-in;
   position: relative;
@@ -53,6 +55,20 @@ li {
 .nav-menu:hover {
   color: rgb(255, 255, 255);
   border: none;
+}
+ul li ul.dropTown li {
+  display: block;
+  margin-top: 20px;
+}
+ul li ul.dropTown {
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+  display: none;
+  transition: 1.5s;
+}
+ul li:hover ul.dropTown {
+  display: block;
 }
 .nav-menu a::before {
   content: "";
@@ -95,7 +111,9 @@ li {
   .mobileMenu.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
-
+  #dropTown {
+    display: none;
+  }
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -120,8 +138,7 @@ li {
   #container {
     width: 100%;
     background-size: cover;
-    background-position: center;
-    background-image: url(../Imagens/18043.jpg);
+    background-image: url(../Imagens/escola.jpg);
   }
   .imagem {
     margin-left: 6rem;
@@ -336,6 +353,62 @@ h2 {
   margin-top: 10px;
   margin-bottom: 20px;
 }
+
+.galeriaAnimada {
+  padding: 40px;
+  display: grid;
+  place-items: center;
+  z-index: -1;
+  scroll-margin-top: 4rem;
+}
+
+.gallery {
+  display: flex;
+  gap: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  .gallery {
+    display: block;
+  }
+  #cardAnimado {
+    width: 250px;
+    margin-top: 20px;
+  }
+  #cardAnimado img {
+    width: 250px;
+  }
+}
+.cardAnimado {
+  position: relative;
+  left: 0px;
+  width: 400px;
+  height: 300px;
+  border-radius: 8px;
+  transition: 1000ms all;
+  transform-origin: center left;
+  box-shadow: 0 5px 12px rgba(0, 0, 0, 0.5);
+
+  overflow: hidden;
+}
+
+.cardAnimado img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.cardAnimado:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+
+.cardAnimado:hover ~ .cardAnimado {
+  font-weight: bold;
+  cursor: pointer;
+  transform: translateX(22px);
+}
 .conteudo {
   display: flex;
   width: 100%;
@@ -367,6 +440,7 @@ h2 {
 .textoP {
   color: #00a2d4;
 }
+
 footer {
   width: 100%;
   color: rgb(0, 0, 0);
@@ -442,45 +516,6 @@ footer {
 
 .footer-list .footer-link:hover {
   color: #7f37c9;
-}
-#footer_subscribe {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  margin-top: 20px;
-}
-
-#footer_subscribe p {
-  color: rgb(0, 0, 0);
-}
-
-#input_group {
-  display: flex;
-  align-items: center;
-  background-color: #e8e8e8;
-  border-radius: 4px;
-}
-
-#input_group input {
-  all: unset;
-  padding: 0.65rem;
-  width: 100%;
-}
-
-#input_group button {
-  background-color: #181818;
-  border: none;
-  color: rgb(243, 238, 238);
-  padding: 0px 1.25rem;
-  font-size: 1.125rem;
-  height: 100%;
-  border-radius: 0px 4px 4px 0px;
-  cursor: pointer;
-  transition: all 0.4s;
-}
-
-#input_group button:hover {
-  opacity: 0.8;
 }
 
 #footer_copyright {
