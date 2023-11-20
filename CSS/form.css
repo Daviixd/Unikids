@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Poppins:wght@100&display=swap");
 body {
   font-family: "Oswald", sans-serif;
+
+  background-image: url(../Imagens/schoolboys-lesson.jpg);
+  background-position: center;
+  background-size: cover;
 }
 header {
   width: 100%;
@@ -16,7 +20,6 @@ header {
   padding-top: 20px;
 }
 main {
-  background-image: url(../Imagens/fundo.jpg);
   height: 100vh;
   background-position: center;
   background-size: cover;
